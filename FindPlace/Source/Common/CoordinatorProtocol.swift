@@ -7,8 +7,8 @@
 
 import Foundation
 
-protocol Coordiantor {
-    var childCoordinators: [Coordiantor] { get set }
+protocol CoordiantorProtocol {
+    var childCoordinators: [CoordiantorProtocol] { get set }
     
     func start()
 }

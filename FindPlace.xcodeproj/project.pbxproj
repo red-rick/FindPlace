@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B75D7CA2632298600ED8FFB /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75D7C92632298600ED8FFB /* CommonError.swift */; };
 		2B96DE022632166E001C1026 /* FindPlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE012632166E001C1026 /* FindPlaceTests.swift */; };
 		2B96DE0D2632166E001C1026 /* FindPlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE0C2632166E001C1026 /* FindPlaceUITests.swift */; };
 		2B96DE2926321708001C1026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B96DE2426321708001C1026 /* Assets.xcassets */; };
 		2B96DE2A26321708001C1026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B96DE2526321708001C1026 /* LaunchScreen.storyboard */; };
 		2B96DE2B26321708001C1026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B96DE2726321708001C1026 /* Main.storyboard */; };
-		2B96DE3326321713001C1026 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE3026321713001C1026 /* EmptyViewController.swift */; };
 		2B96DE3426321713001C1026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE3126321713001C1026 /* AppDelegate.swift */; };
 		2B96DE3526321713001C1026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE3226321713001C1026 /* SceneDelegate.swift */; };
-		2B96DE5D26321AE8001C1026 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE5C26321AE8001C1026 /* Coordinator.swift */; };
-		2B96DE6226321B75001C1026 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE6126321B75001C1026 /* ViewModel.swift */; };
-		2B96DE6726321BA8001C1026 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE6626321BA8001C1026 /* DataProvider.swift */; };
-		2B96DE6C26321C04001C1026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE6B26321C04001C1026 /* ViewController.swift */; };
+		2B96DE5D26321AE8001C1026 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE5C26321AE8001C1026 /* CoordinatorProtocol.swift */; };
 		2B96DE7926321C4A001C1026 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE7826321C4A001C1026 /* APIRequest.swift */; };
 		2B96DE7E26321C5E001C1026 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE7D26321C5E001C1026 /* APIService.swift */; };
-		2B96DE8C26321EE6001C1026 /* ModuleFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE8B26321EE6001C1026 /* ModuleFabric.swift */; };
+		2B96DE8C26321EE6001C1026 /* FindPlaceModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */; };
+		2B96DE9126322071001C1026 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE9026322071001C1026 /* MainCoordinator.swift */; };
+		2B96DE9926322312001C1026 /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE9826322312001C1026 /* SearchPlaceViewController.swift */; };
+		2B96DEA126322359001C1026 /* SearchPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DEA026322359001C1026 /* SearchPlaceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B75D7C92632298600ED8FFB /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		2B96DDE72632166A001C1026 /* FindPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B96DDF82632166D001C1026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B96DDFD2632166E001C1026 /* FindPlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindPlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,16 +54,15 @@
 		2B96DE2426321708001C1026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B96DE2626321708001C1026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B96DE2826321708001C1026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2B96DE3026321713001C1026 /* EmptyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		2B96DE3126321713001C1026 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B96DE3226321713001C1026 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B96DE5C26321AE8001C1026 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		2B96DE6126321B75001C1026 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		2B96DE6626321BA8001C1026 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
-		2B96DE6B26321C04001C1026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B96DE5C26321AE8001C1026 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		2B96DE7826321C4A001C1026 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		2B96DE7D26321C5E001C1026 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		2B96DE8B26321EE6001C1026 /* ModuleFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFabric.swift; sourceTree = "<group>"; };
+		2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPlaceModulesFactory.swift; sourceTree = "<group>"; };
+		2B96DE9026322071001C1026 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2B96DE9826322312001C1026 /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
+		2B96DEA026322359001C1026 /* SearchPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,6 @@
 				2B96DE41263218C4001C1026 /* Network */,
 				2B96DE3926321754001C1026 /* Modules */,
 				2B96DE3C26321754001C1026 /* Utilities */,
-				2B96DE3026321713001C1026 /* EmptyViewController.swift */,
 				2B96DE3126321713001C1026 /* AppDelegate.swift */,
 				2B96DE3226321713001C1026 /* SceneDelegate.swift */,
 			);
@@ -167,6 +166,7 @@
 			children = (
 				2B96DE3A26321754001C1026 /* SearchPlace */,
 				2B96DE3B26321754001C1026 /* PlaceDatails */,
+				2B96DE9026322071001C1026 /* MainCoordinator.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -174,6 +174,8 @@
 		2B96DE3A26321754001C1026 /* SearchPlace */ = {
 			isa = PBXGroup;
 			children = (
+				2B96DE9826322312001C1026 /* SearchPlaceViewController.swift */,
+				2B96DEA026322359001C1026 /* SearchPlaceViewModel.swift */,
 			);
 			path = SearchPlace;
 			sourceTree = "<group>";
@@ -195,11 +197,9 @@
 		2B96DE40263218C4001C1026 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2B96DE5C26321AE8001C1026 /* Coordinator.swift */,
-				2B96DE6126321B75001C1026 /* ViewModel.swift */,
-				2B96DE6626321BA8001C1026 /* DataProvider.swift */,
-				2B96DE6B26321C04001C1026 /* ViewController.swift */,
-				2B96DE8B26321EE6001C1026 /* ModuleFabric.swift */,
+				2B96DE5C26321AE8001C1026 /* CoordinatorProtocol.swift */,
+				2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */,
+				2B75D7C92632298600ED8FFB /* CommonError.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -343,16 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B96DE6726321BA8001C1026 /* DataProvider.swift in Sources */,
 				2B96DE7926321C4A001C1026 /* APIRequest.swift in Sources */,
-				2B96DE8C26321EE6001C1026 /* ModuleFabric.swift in Sources */,
-				2B96DE6226321B75001C1026 /* ViewModel.swift in Sources */,
-				2B96DE5D26321AE8001C1026 /* Coordinator.swift in Sources */,
+				2B96DE8C26321EE6001C1026 /* FindPlaceModulesFactory.swift in Sources */,
+				2B96DE5D26321AE8001C1026 /* CoordinatorProtocol.swift in Sources */,
+				2B96DE9126322071001C1026 /* MainCoordinator.swift in Sources */,
 				2B96DE3426321713001C1026 /* AppDelegate.swift in Sources */,
-				2B96DE6C26321C04001C1026 /* ViewController.swift in Sources */,
-				2B96DE3326321713001C1026 /* EmptyViewController.swift in Sources */,
+				2B75D7CA2632298600ED8FFB /* CommonError.swift in Sources */,
+				2B96DEA126322359001C1026 /* SearchPlaceViewModel.swift in Sources */,
 				2B96DE7E26321C5E001C1026 /* APIService.swift in Sources */,
 				2B96DE3526321713001C1026 /* SceneDelegate.swift in Sources */,
+				2B96DE9926322312001C1026 /* SearchPlaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
