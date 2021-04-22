@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B75D7CA2632298600ED8FFB /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75D7C92632298600ED8FFB /* CommonError.swift */; };
+		2B75D7D226322F8B00ED8FFB /* APIMapRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75D7D126322F8B00ED8FFB /* APIMapRequest.swift */; };
+		2B75D7E02632310C00ED8FFB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B75D7DF2632310B00ED8FFB /* CoreLocation.framework */; };
 		2B96DE022632166E001C1026 /* FindPlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE012632166E001C1026 /* FindPlaceTests.swift */; };
 		2B96DE0D2632166E001C1026 /* FindPlaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE0C2632166E001C1026 /* FindPlaceUITests.swift */; };
 		2B96DE2926321708001C1026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B96DE2426321708001C1026 /* Assets.xcassets */; };
@@ -16,7 +18,7 @@
 		2B96DE3426321713001C1026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE3126321713001C1026 /* AppDelegate.swift */; };
 		2B96DE3526321713001C1026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE3226321713001C1026 /* SceneDelegate.swift */; };
 		2B96DE5D26321AE8001C1026 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE5C26321AE8001C1026 /* CoordinatorProtocol.swift */; };
-		2B96DE7926321C4A001C1026 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE7826321C4A001C1026 /* APIRequest.swift */; };
+		2B96DE7926321C4A001C1026 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE7826321C4A001C1026 /* APIRequestProtocol.swift */; };
 		2B96DE7E26321C5E001C1026 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE7D26321C5E001C1026 /* APIService.swift */; };
 		2B96DE8C26321EE6001C1026 /* FindPlaceModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */; };
 		2B96DE9126322071001C1026 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE9026322071001C1026 /* MainCoordinator.swift */; };
@@ -43,6 +45,9 @@
 
 /* Begin PBXFileReference section */
 		2B75D7C92632298600ED8FFB /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		2B75D7D126322F8B00ED8FFB /* APIMapRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMapRequest.swift; sourceTree = "<group>"; };
+		2B75D7DA263230EF00ED8FFB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2B75D7DF2632310B00ED8FFB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2B96DDE72632166A001C1026 /* FindPlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindPlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B96DDF82632166D001C1026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B96DDFD2632166E001C1026 /* FindPlaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindPlaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +62,7 @@
 		2B96DE3126321713001C1026 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B96DE3226321713001C1026 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2B96DE5C26321AE8001C1026 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
-		2B96DE7826321C4A001C1026 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		2B96DE7826321C4A001C1026 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
 		2B96DE7D26321C5E001C1026 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPlaceModulesFactory.swift; sourceTree = "<group>"; };
 		2B96DE9026322071001C1026 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B75D7E02632310C00ED8FFB /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B75D7D9263230EE00ED8FFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B75D7DF2632310B00ED8FFB /* CoreLocation.framework */,
+				2B75D7DA263230EF00ED8FFB /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2B96DDDE2632166A001C1026 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +112,7 @@
 				2B96DE002632166E001C1026 /* FindPlaceTests */,
 				2B96DE0B2632166E001C1026 /* FindPlaceUITests */,
 				2B96DDE82632166A001C1026 /* Products */,
+				2B75D7D9263230EE00ED8FFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,8 +223,9 @@
 		2B96DE41263218C4001C1026 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				2B96DE7826321C4A001C1026 /* APIRequest.swift */,
+				2B96DE7826321C4A001C1026 /* APIRequestProtocol.swift */,
 				2B96DE7D26321C5E001C1026 /* APIService.swift */,
+				2B75D7D126322F8B00ED8FFB /* APIMapRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -343,8 +360,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B96DE7926321C4A001C1026 /* APIRequest.swift in Sources */,
+				2B96DE7926321C4A001C1026 /* APIRequestProtocol.swift in Sources */,
 				2B96DE8C26321EE6001C1026 /* FindPlaceModulesFactory.swift in Sources */,
+				2B75D7D226322F8B00ED8FFB /* APIMapRequest.swift in Sources */,
 				2B96DE5D26321AE8001C1026 /* CoordinatorProtocol.swift in Sources */,
 				2B96DE9126322071001C1026 /* MainCoordinator.swift in Sources */,
 				2B96DE3426321713001C1026 /* AppDelegate.swift in Sources */,

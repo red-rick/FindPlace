@@ -7,8 +7,10 @@
 
 import Foundation
 
-protocol APIRequest {
-    var parametersString: String { get }
+protocol APIRequestProtocol {
+    var baseUrl: String { get }
+    var path: String { get }
+    var queryParameters: [URLQueryItem]? { get }
     var HTTPHeaders: [String: String] { get }
     
     func createURLRequest() throws -> URLRequest
