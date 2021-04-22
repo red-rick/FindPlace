@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  EmptyViewController.swift
 //  FindPlace
 //
 //  Created by Dmytro Benedyk on 22.04.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class EmptyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
