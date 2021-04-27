@@ -9,15 +9,8 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
     
-    private var coordinator: CoordiantorProtocol?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        if let mainWindow = window {
-            coordinator = MainCoordinator(with: mainWindow)
-            coordinator?.start()
-        }
         return true
     }
 
@@ -28,6 +21,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
     }
 
-
 }
-

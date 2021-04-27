@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B0264DE2637C69600601531 /* UISanitize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0264DD2637C69600601531 /* UISanitize.swift */; };
 		2B5CA9FD26323F16001E99C5 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA9FC26323F16001E99C5 /* MainCoordinator.swift */; };
-		2B5CAA0226323F23001E99C5 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0126323F23001E99C5 /* DataStorage.swift */; };
+		2B5CAA0226323F23001E99C5 /* MapDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0126323F23001E99C5 /* MapDataStorage.swift */; };
 		2B5CAA0826323F9A001E99C5 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0726323F9A001E99C5 /* Place.swift */; };
 		2B5CAA1026324152001E99C5 /* PlaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0F26324152001E99C5 /* PlaceDetails.swift */; };
 		2B5CAA81263795A6001E99C5 /* PlacesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA80263795A6001E99C5 /* PlacesDataSource.swift */; };
 		2B5CAA8B263795D5001E99C5 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA8A263795D5001E99C5 /* DataSourceProtocol.swift */; };
-		2B5CAA9C263798B3001E99C5 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA9B263798B3001E99C5 /* ViewModelProtocol.swift */; };
-		2B5CAAA1263798DE001E99C5 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAAA0263798DE001E99C5 /* ViewProtocol.swift */; };
+		2B5CAAB02637A13A001E99C5 /* SuggestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAAAF2637A13A001E99C5 /* SuggestionTableViewCell.swift */; };
+		2B5CAAB52637A14C001E99C5 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAAB42637A14C001E99C5 /* FavoriteCollectionViewCell.swift */; };
 		2B75D7CA2632298600ED8FFB /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75D7C92632298600ED8FFB /* CommonError.swift */; };
 		2B75D7D226322F8B00ED8FFB /* APIMapRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75D7D126322F8B00ED8FFB /* APIMapRequest.swift */; };
 		2B75D7E02632310C00ED8FFB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B75D7DF2632310B00ED8FFB /* CoreLocation.framework */; };
@@ -51,14 +52,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B0264DD2637C69600601531 /* UISanitize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISanitize.swift; sourceTree = "<group>"; };
 		2B5CA9FC26323F16001E99C5 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		2B5CAA0126323F23001E99C5 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		2B5CAA0126323F23001E99C5 /* MapDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataStorage.swift; sourceTree = "<group>"; };
 		2B5CAA0726323F9A001E99C5 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		2B5CAA0F26324152001E99C5 /* PlaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetails.swift; sourceTree = "<group>"; };
 		2B5CAA80263795A6001E99C5 /* PlacesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataSource.swift; sourceTree = "<group>"; };
 		2B5CAA8A263795D5001E99C5 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
-		2B5CAA9B263798B3001E99C5 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
-		2B5CAAA0263798DE001E99C5 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		2B5CAAAF2637A13A001E99C5 /* SuggestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTableViewCell.swift; sourceTree = "<group>"; };
+		2B5CAAB42637A14C001E99C5 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
 		2B75D7C92632298600ED8FFB /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		2B75D7D126322F8B00ED8FFB /* APIMapRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMapRequest.swift; sourceTree = "<group>"; };
 		2B75D7DA263230EF00ED8FFB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -117,6 +119,15 @@
 				2B5CAA0F26324152001E99C5 /* PlaceDetails.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2B5CAAAE2637A123001E99C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2B5CAAAF2637A13A001E99C5 /* SuggestionTableViewCell.swift */,
+				2B5CAAB42637A14C001E99C5 /* FavoriteCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		2B75D7D9263230EE00ED8FFB /* Frameworks */ = {
@@ -203,6 +214,7 @@
 		2B96DE3926321754001C1026 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				2B5CAA0126323F23001E99C5 /* MapDataStorage.swift */,
 				2B96DE3A26321754001C1026 /* SearchPlace */,
 				2B96DE3B26321754001C1026 /* PlaceDatails */,
 			);
@@ -212,6 +224,7 @@
 		2B96DE3A26321754001C1026 /* SearchPlace */ = {
 			isa = PBXGroup;
 			children = (
+				2B5CAAAE2637A123001E99C5 /* Cells */,
 				2B96DE9826322312001C1026 /* SearchPlaceViewController.swift */,
 				2B96DEA026322359001C1026 /* SearchPlaceViewModel.swift */,
 				2B5CAA80263795A6001E99C5 /* PlacesDataSource.swift */,
@@ -236,14 +249,12 @@
 		2B96DE40263218C4001C1026 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2B0264DD2637C69600601531 /* UISanitize.swift */,
 				2B96DE5C26321AE8001C1026 /* CoordinatorProtocol.swift */,
 				2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */,
 				2B75D7C92632298600ED8FFB /* CommonError.swift */,
 				2B5CA9FC26323F16001E99C5 /* MainCoordinator.swift */,
-				2B5CAA0126323F23001E99C5 /* DataStorage.swift */,
 				2B5CAA8A263795D5001E99C5 /* DataSourceProtocol.swift */,
-				2B5CAA9B263798B3001E99C5 /* ViewModelProtocol.swift */,
-				2B5CAAA0263798DE001E99C5 /* ViewProtocol.swift */,
 				2B5CAA0626323F83001E99C5 /* Model */,
 			);
 			path = Common;
@@ -392,11 +403,14 @@
 				2B96DE7926321C4A001C1026 /* APIRequestProtocol.swift in Sources */,
 				2B5CAA8B263795D5001E99C5 /* DataSourceProtocol.swift in Sources */,
 				2B5CAA0826323F9A001E99C5 /* Place.swift in Sources */,
+				2B0264DE2637C69600601531 /* UISanitize.swift in Sources */,
 				2B96DE8C26321EE6001C1026 /* FindPlaceModulesFactory.swift in Sources */,
+				2B5CAAB52637A14C001E99C5 /* FavoriteCollectionViewCell.swift in Sources */,
 				2B75D7D226322F8B00ED8FFB /* APIMapRequest.swift in Sources */,
 				2B5CAA81263795A6001E99C5 /* PlacesDataSource.swift in Sources */,
-				2B5CAA0226323F23001E99C5 /* DataStorage.swift in Sources */,
+				2B5CAA0226323F23001E99C5 /* MapDataStorage.swift in Sources */,
 				2B96DE5D26321AE8001C1026 /* CoordinatorProtocol.swift in Sources */,
+				2B5CAAB02637A13A001E99C5 /* SuggestionTableViewCell.swift in Sources */,
 				2B96DE3426321713001C1026 /* AppDelegate.swift in Sources */,
 				2B5CA9FD26323F16001E99C5 /* MainCoordinator.swift in Sources */,
 				2B75D7CA2632298600ED8FFB /* CommonError.swift in Sources */,
@@ -404,8 +418,6 @@
 				2B5CAA1026324152001E99C5 /* PlaceDetails.swift in Sources */,
 				2B96DE7E26321C5E001C1026 /* APIService.swift in Sources */,
 				2B96DE3526321713001C1026 /* SceneDelegate.swift in Sources */,
-				2B5CAA9C263798B3001E99C5 /* ViewModelProtocol.swift in Sources */,
-				2B5CAAA1263798DE001E99C5 /* ViewProtocol.swift in Sources */,
 				2B96DE9926322312001C1026 /* SearchPlaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

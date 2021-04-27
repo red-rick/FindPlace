@@ -12,6 +12,10 @@ struct PlacesDataSource: DataSourceProtocol {
     
     private let titles: [String]
     
+    init(with list: [String]) {
+        titles = list
+    }
+    
     var numberOfSections: Int { 1 }
     
     func numberOfItems(at section: Int) -> Int {

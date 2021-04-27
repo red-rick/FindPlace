@@ -14,7 +14,7 @@ protocol FindPlaceModulesFactoryProtocol {
 
 struct FindPlaceModulesFactory: FindPlaceModulesFactoryProtocol {
     private struct Constants {
-        static let storyaboardName = "MainStoryboard"
+        static let storyaboardName = "Main"
         
         static let searchConotrollerId = "SearchPlaceViewController"
         static let detailsControllerId = ""

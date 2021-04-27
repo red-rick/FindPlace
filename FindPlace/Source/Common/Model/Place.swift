@@ -9,7 +9,7 @@ import Foundation
 
 struct Place: Decodable {
     let description: String
-    let distanceMeters: Int
+    let distanceMeters: Int?
     let matchedSubstrings: [Substring]?
     let placeId: String
     let reference: String

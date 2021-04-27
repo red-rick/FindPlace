@@ -9,8 +9,9 @@ import Foundation
 
 protocol MapDataStorageProtocol {
     func startSession()
+    func endSession()
     
-    func getListOfPlaces(for searchString: String, completion: @escaping (Result<[Place], APIError>) -> Void)
+    func getListOfPlaces(for searchString: String, completion: @escaping (Result<SearchViewModelState, APIError>) -> Void)
     func getPlaceDetails(for placeId: String, completion: @escaping (Result<PlaceDetails, APIError>) -> Void)
 }
 
@@ -33,7 +34,11 @@ final class MapDataStorage: MapDataStorageProtocol {
         sessionId = UUID()
     }
     
-    func getListOfPlaces(for searchString: String, completion: @escaping (Result<[Place], APIError>) -> Void) {
+    func endSession() {
+        sessionId = nil
+    }
+    
+    func getListOfPlaces(for searchString: String, completion: @escaping (Result<SearchViewModelState, APIError>) -> Void) {
         let parameters = FindPlaceParameters(input: searchString,
                                              key: APIKey,
                                              sessionToken: sessionId?.uuidString,
@@ -52,12 +57,13 @@ final class MapDataStorage: MapDataStorageProtocol {
                 do {
                     let responseObject = try decoder.decode(APIListOfPlacesResponse.self, from: data)
                     if let places = responseObject.predictions {
-                        completion(.success(places))
+                        let state = SearchViewModelState(suggestions: places.map { SearchViewModelState.PlaceInfo(id: $0.placeId, address: $0.description) }, favorites: [])
+                        completion(.success(state))
                     } else {
                         completion(.failure(.cannotParseResponse))
                     }
                 } catch (_) {
-                    completion(.failure(.unknown))
+                    completion(.failure(.cannotParseResponse))
                 }
             case .failure(let error):
                 completion(.failure(error))
