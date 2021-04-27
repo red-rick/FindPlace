@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B0264DE2637C69600601531 /* UISanitize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0264DD2637C69600601531 /* UISanitize.swift */; };
+		2B0264EC26385FC200601531 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0264EB26385FC200601531 /* SearchViewModelTests.swift */; };
 		2B5CA9FD26323F16001E99C5 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA9FC26323F16001E99C5 /* MainCoordinator.swift */; };
 		2B5CAA0226323F23001E99C5 /* MapDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0126323F23001E99C5 /* MapDataStorage.swift */; };
 		2B5CAA0826323F9A001E99C5 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0726323F9A001E99C5 /* Place.swift */; };
@@ -53,6 +54,7 @@
 
 /* Begin PBXFileReference section */
 		2B0264DD2637C69600601531 /* UISanitize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISanitize.swift; sourceTree = "<group>"; };
+		2B0264EB26385FC200601531 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
 		2B5CA9FC26323F16001E99C5 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		2B5CAA0126323F23001E99C5 /* MapDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataStorage.swift; sourceTree = "<group>"; };
 		2B5CAA0726323F9A001E99C5 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				2B96DE012632166E001C1026 /* FindPlaceTests.swift */,
 				2B96DE032632166E001C1026 /* Info.plist */,
+				2B0264EB26385FC200601531 /* SearchViewModelTests.swift */,
 			);
 			path = FindPlaceTests;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B0264EC26385FC200601531 /* SearchViewModelTests.swift in Sources */,
 				2B96DE022632166E001C1026 /* FindPlaceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
