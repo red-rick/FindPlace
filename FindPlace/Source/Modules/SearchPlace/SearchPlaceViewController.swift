@@ -19,6 +19,7 @@ final class SearchPlaceViewController: UIViewController {
     @IBOutlet private weak var suggestionsTableView: UITableView!
     @IBOutlet private weak var favoritesCollectionView: UICollectionView!
     @IBOutlet private weak var searchTextField: UITextField!
+    @IBOutlet private weak var messageLabel: UILabel!
     
     private struct Constants {
         static let suggestionCellIdetifier = "SuggestionCell"
@@ -27,11 +28,23 @@ final class SearchPlaceViewController: UIViewController {
     
     private var currentState: SearchViewState?
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        messageLabel.isHidden = true
+        viewModel?.viewLoaded()
+    }
+    
 }
 
 private extension SearchPlaceViewController {
     func render(state: SearchViewState) {
         currentState = state
+        if let message = currentState?.errorMessage {
+            messageLabel.text = message
+            messageLabel.isHidden = false
+        } else {
+            messageLabel.isHidden = true
+        }
         suggestionsTableView.reloadData()
         favoritesCollectionView.reloadData()
     }
@@ -40,6 +53,10 @@ private extension SearchPlaceViewController {
 extension SearchPlaceViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         viewModel?.startSession()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
     }
     
     @IBAction func textChanged(textField: UITextField) {

@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol MapDataStorageProtocol {
     func startSession()
     func endSession()
     
-    func getListOfPlaces(for searchString: String, completion: @escaping (Result<SearchViewModelState, APIError>) -> Void)
+    func getListOfPlaces(for searchString: String, location: CLLocationCoordinate2D?, completion: @escaping (Result<SearchViewModelState, APIError>) -> Void)
     func getPlaceDetails(for placeId: String, completion: @escaping (Result<PlaceDetails, APIError>) -> Void)
 }
 
@@ -38,16 +39,16 @@ final class MapDataStorage: MapDataStorageProtocol {
         sessionId = nil
     }
     
-    func getListOfPlaces(for searchString: String, completion: @escaping (Result<SearchViewModelState, APIError>) -> Void) {
+    func getListOfPlaces(for searchString: String, location: CLLocationCoordinate2D?, completion: @escaping (Result<SearchViewModelState, APIError>) -> Void) {
         let parameters = FindPlaceParameters(input: searchString,
                                              key: APIKey,
                                              sessionToken: sessionId?.uuidString,
                                              offset: nil,
                                              origin: nil,
-                                             location: nil,
+                                             location: location,
                                              radius: nil,
                                              language: nil,
-                                             types: nil,
+                                             types: ["establishment"],
                                              comoponents: nil)
         apiService.performRequest(APIMapRequest.findPlace(parameters)) { (result) in
             switch result {
@@ -57,7 +58,9 @@ final class MapDataStorage: MapDataStorageProtocol {
                 do {
                     let responseObject = try decoder.decode(APIListOfPlacesResponse.self, from: data)
                     if let places = responseObject.predictions {
-                        let state = SearchViewModelState(suggestions: places.map { SearchViewModelState.PlaceInfo(id: $0.placeId, address: $0.description) }, favorites: [])
+                        let state = SearchViewModelState(suggestions: places.map {
+                                                            SearchViewModelState.PlaceInfo(id: $0.placeId, address: $0.description, types: $0.types) },
+                                                         favorites: [])
                         completion(.success(state))
                     } else {
                         completion(.failure(.cannotParseResponse))

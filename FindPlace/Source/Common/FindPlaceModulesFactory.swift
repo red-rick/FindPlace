@@ -24,7 +24,7 @@ struct FindPlaceModulesFactory: FindPlaceModulesFactoryProtocol {
     
     func createPlaceSearch() throws -> UIViewController {
         if let viewController = storyboard.instantiateViewController(identifier: Constants.searchConotrollerId) as? SearchPlaceViewController {
-            viewController.viewModel = SearchPlaceViewModel(with: MapDataStorage.shared)
+            viewController.viewModel = SearchPlaceViewModel(with: MapDataStorage.shared, filters: [.liquorStore, .restaraunt])
             return viewController
         } else {
             let error: CommonError = .cannotInitalizeController

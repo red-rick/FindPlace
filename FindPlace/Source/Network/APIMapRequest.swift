@@ -17,7 +17,7 @@ struct FindPlaceParameters {
     let location: CLLocationCoordinate2D?
     let radius: Int?
     let language: String?
-    let types: [String]?
+    let types: [String]
     let comoponents: [String]?
     
     var urlComponents: [URLQueryItem] {
@@ -27,6 +27,10 @@ struct FindPlaceParameters {
         if let token = sessionToken {
             components.append(URLQueryItem(name: "sessiontoken", value: token))
         }
+        if let userLocation = location {
+            components.append(URLQueryItem(name: "location", value: "\(userLocation.latitude),\(userLocation.longitude)"))
+        }
+        components.append(URLQueryItem(name: "types", value: types.joined(separator: ",")))
         return components
     }
 }
