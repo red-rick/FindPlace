@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5CA9FD26323F16001E99C5 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CA9FC26323F16001E99C5 /* MainCoordinator.swift */; };
+		2B5CAA0226323F23001E99C5 /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0126323F23001E99C5 /* DataStorage.swift */; };
+		2B5CAA0826323F9A001E99C5 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0726323F9A001E99C5 /* Place.swift */; };
+		2B5CAA1026324152001E99C5 /* PlaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA0F26324152001E99C5 /* PlaceDetails.swift */; };
+		2B5CAA81263795A6001E99C5 /* PlacesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA80263795A6001E99C5 /* PlacesDataSource.swift */; };
+		2B5CAA8B263795D5001E99C5 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA8A263795D5001E99C5 /* DataSourceProtocol.swift */; };
+		2B5CAA9C263798B3001E99C5 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAA9B263798B3001E99C5 /* ViewModelProtocol.swift */; };
+		2B5CAAA1263798DE001E99C5 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CAAA0263798DE001E99C5 /* ViewProtocol.swift */; };
 		2B75D7CA2632298600ED8FFB /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75D7C92632298600ED8FFB /* CommonError.swift */; };
 		2B75D7D226322F8B00ED8FFB /* APIMapRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75D7D126322F8B00ED8FFB /* APIMapRequest.swift */; };
 		2B75D7E02632310C00ED8FFB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B75D7DF2632310B00ED8FFB /* CoreLocation.framework */; };
@@ -21,7 +29,6 @@
 		2B96DE7926321C4A001C1026 /* APIRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE7826321C4A001C1026 /* APIRequestProtocol.swift */; };
 		2B96DE7E26321C5E001C1026 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE7D26321C5E001C1026 /* APIService.swift */; };
 		2B96DE8C26321EE6001C1026 /* FindPlaceModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */; };
-		2B96DE9126322071001C1026 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE9026322071001C1026 /* MainCoordinator.swift */; };
 		2B96DE9926322312001C1026 /* SearchPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DE9826322312001C1026 /* SearchPlaceViewController.swift */; };
 		2B96DEA126322359001C1026 /* SearchPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B96DEA026322359001C1026 /* SearchPlaceViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +51,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B5CA9FC26323F16001E99C5 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2B5CAA0126323F23001E99C5 /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		2B5CAA0726323F9A001E99C5 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		2B5CAA0F26324152001E99C5 /* PlaceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetails.swift; sourceTree = "<group>"; };
+		2B5CAA80263795A6001E99C5 /* PlacesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataSource.swift; sourceTree = "<group>"; };
+		2B5CAA8A263795D5001E99C5 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
+		2B5CAA9B263798B3001E99C5 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		2B5CAAA0263798DE001E99C5 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		2B75D7C92632298600ED8FFB /* CommonError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
 		2B75D7D126322F8B00ED8FFB /* APIMapRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMapRequest.swift; sourceTree = "<group>"; };
 		2B75D7DA263230EF00ED8FFB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -65,7 +80,6 @@
 		2B96DE7826321C4A001C1026 /* APIRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestProtocol.swift; sourceTree = "<group>"; };
 		2B96DE7D26321C5E001C1026 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPlaceModulesFactory.swift; sourceTree = "<group>"; };
-		2B96DE9026322071001C1026 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		2B96DE9826322312001C1026 /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewController.swift; sourceTree = "<group>"; };
 		2B96DEA026322359001C1026 /* SearchPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B5CAA0626323F83001E99C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2B5CAA0726323F9A001E99C5 /* Place.swift */,
+				2B5CAA0F26324152001E99C5 /* PlaceDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2B75D7D9263230EE00ED8FFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,7 +205,6 @@
 			children = (
 				2B96DE3A26321754001C1026 /* SearchPlace */,
 				2B96DE3B26321754001C1026 /* PlaceDatails */,
-				2B96DE9026322071001C1026 /* MainCoordinator.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -192,6 +214,7 @@
 			children = (
 				2B96DE9826322312001C1026 /* SearchPlaceViewController.swift */,
 				2B96DEA026322359001C1026 /* SearchPlaceViewModel.swift */,
+				2B5CAA80263795A6001E99C5 /* PlacesDataSource.swift */,
 			);
 			path = SearchPlace;
 			sourceTree = "<group>";
@@ -216,6 +239,12 @@
 				2B96DE5C26321AE8001C1026 /* CoordinatorProtocol.swift */,
 				2B96DE8B26321EE6001C1026 /* FindPlaceModulesFactory.swift */,
 				2B75D7C92632298600ED8FFB /* CommonError.swift */,
+				2B5CA9FC26323F16001E99C5 /* MainCoordinator.swift */,
+				2B5CAA0126323F23001E99C5 /* DataStorage.swift */,
+				2B5CAA8A263795D5001E99C5 /* DataSourceProtocol.swift */,
+				2B5CAA9B263798B3001E99C5 /* ViewModelProtocol.swift */,
+				2B5CAAA0263798DE001E99C5 /* ViewProtocol.swift */,
+				2B5CAA0626323F83001E99C5 /* Model */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -361,15 +390,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B96DE7926321C4A001C1026 /* APIRequestProtocol.swift in Sources */,
+				2B5CAA8B263795D5001E99C5 /* DataSourceProtocol.swift in Sources */,
+				2B5CAA0826323F9A001E99C5 /* Place.swift in Sources */,
 				2B96DE8C26321EE6001C1026 /* FindPlaceModulesFactory.swift in Sources */,
 				2B75D7D226322F8B00ED8FFB /* APIMapRequest.swift in Sources */,
+				2B5CAA81263795A6001E99C5 /* PlacesDataSource.swift in Sources */,
+				2B5CAA0226323F23001E99C5 /* DataStorage.swift in Sources */,
 				2B96DE5D26321AE8001C1026 /* CoordinatorProtocol.swift in Sources */,
-				2B96DE9126322071001C1026 /* MainCoordinator.swift in Sources */,
 				2B96DE3426321713001C1026 /* AppDelegate.swift in Sources */,
+				2B5CA9FD26323F16001E99C5 /* MainCoordinator.swift in Sources */,
 				2B75D7CA2632298600ED8FFB /* CommonError.swift in Sources */,
 				2B96DEA126322359001C1026 /* SearchPlaceViewModel.swift in Sources */,
+				2B5CAA1026324152001E99C5 /* PlaceDetails.swift in Sources */,
 				2B96DE7E26321C5E001C1026 /* APIService.swift in Sources */,
 				2B96DE3526321713001C1026 /* SceneDelegate.swift in Sources */,
+				2B5CAA9C263798B3001E99C5 /* ViewModelProtocol.swift in Sources */,
+				2B5CAAA1263798DE001E99C5 /* ViewProtocol.swift in Sources */,
 				2B96DE9926322312001C1026 /* SearchPlaceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,12 +9,14 @@ import Foundation
 
 enum APIError: Error {
     case cannotCreateRequest
+    case cannotParseResponse
     case serverError
     case unknown
     
     var message: String {
         switch self {
         case .cannotCreateRequest: return "Cannot create request"
+        case .cannotParseResponse: return "Cannot parse response"
         case .serverError: return "Better call Soul"
         case .unknown: return "Unknwon error"
         }
@@ -24,7 +26,6 @@ enum APIError: Error {
 enum HTTPStatusCode: Int {
     case ok = 200
 }
-
 
 let APIKey = "AIzaSyBgOWgGoM7bHob_kpXnyN2cIdtby71TZsc"
 

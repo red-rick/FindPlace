@@ -20,7 +20,9 @@ final class MainCoordinator: CoordiantorProtocol {
             window.makeKeyAndVisible()
         }
         catch( _ ) {
-            NSLog("Cannot start coordinator")
+            #if DEBUG
+            fatalError("Root contoroller is not initialized")
+            #endif
         }
     }
     

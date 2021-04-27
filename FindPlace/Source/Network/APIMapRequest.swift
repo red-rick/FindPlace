@@ -10,7 +10,7 @@ import CoreLocation
 
 struct FindPlaceParameters {
     let input: String
-    let key = APIKey
+    let key: String
     let sessionToken: String?
     let offset: String?
     let origin: String?
@@ -32,7 +32,7 @@ struct FindPlaceParameters {
 }
 
 struct PlaceDetailsParameters {
-    let key = APIKey
+    let key: String
     let placeId: String
     let language: String?
     let region: String?
